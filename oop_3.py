@@ -1,4 +1,4 @@
-# __str__ ,  __eq__
+# methods --->>>  __str__ ,  __eq__
 
 class Customer:
     def __init__(self, name, membership_type):  
@@ -23,10 +23,11 @@ class Customer:
         
         return False
 
-         
 
 customers = [Customer("Pritom", "Gold"),       
              Customer("Cameron", "Silver")]
+
+
 
 print(customers[1])                                       # it prints the name and membership_type || Without it, it give us the memory address.
 
