@@ -1,4 +1,4 @@
-# __str__
+# __str__ ,  __eq__
 
 class Customer:
     def __init__(self, name, membership_type):  
@@ -17,6 +17,12 @@ class Customer:
         for customer in customers:
             print(customer)
 
+    def __eq__(self, other):                                # comparing two customers
+        if self.name == other.name and self.membership_type == other.membership_type:
+            return True
+        
+        return False
+
          
 
 customers = [Customer("Pritom", "Gold"),       
@@ -28,3 +34,5 @@ print(customers[1])                                       # it prints the name a
 print(" \n ")
 
 Customer.print_all_customers(customers)                   # It will print all the customers
+
+print(customers[0] == customers[1])                       # checking whether this two customers are same or not...
