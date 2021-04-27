@@ -10,10 +10,10 @@ class Customer:
         # invoke an API
         # Update a database
         # calculate Costs...........
-        print("Calculating Cost")  # Just to simulate something..
+        print("Calculating Cost")                       # Just to simulate something..
         self.membership_type = new_membership
 
-    def read_customer():           # This method is not invokable to any individual Customers.. (Static Method)
+    def read_customer():                                # This method is not invokable to any individual Customers.. (Static Method)
         print('Reading customer from the database')
 
 
