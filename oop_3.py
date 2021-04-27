@@ -1,29 +1,30 @@
+# __str__
+
 class Customer:
     def __init__(self, name, membership_type):  
         self.name = name
         self.membership_type = membership_type
 
-    def update_membership(self, new_membership):    # Added a New method to the class to update membership_type
+    def update_membership(self, new_membership):    
 
-        # We can 
-        # invoke an API
-        # Update a database
-        # calculate Costs...........
-        print("Calculating Cost")  # Just to simulate something..
+        print("Calculating Cost") 
         self.membership_type = new_membership
+    
+    def __str__(self):                                    # __str__  givers actual data, not the memory adderess
+         return self.name + ' ' + self.membership_type    # returns the name and membership_type || Without it, it give us the memory address.
 
-    def read_customer():           # This method is not invokable to any individual Customers.. (Static Method)
-        print('Reading customer from the database')
+    def print_all_customers(customers):                   # for printing all the customers  || No need the self
+        for customer in customers:
+            print(customer)
 
-
-
+         
 
 customers = [Customer("Pritom", "Gold"),       
              Customer("Cameron", "Silver")]
 
-print(customers[1].membership_type)
-customers[1].update_membership("Gold")              # Membership Type is updated here form Silver to Gold
-print(customers[1].membership_type)                 # Print the new membership_type
+print(customers[1])                                       # it prints the name and membership_type || Without it, it give us the memory address.
 
 
-Customer.read_customer()                            # Using the Static Method
+print(" \n ")
+
+Customer.print_all_customers(customers)                   # It will print all the customers
