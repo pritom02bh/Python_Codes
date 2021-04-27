@@ -1,4 +1,4 @@
-# methods --->>>  __str__ ,  __eq__
+# methods --->>>  __str__ ,  __eq__, __hash__
 
 class Customer:
     def __init__(self, name, membership_type):  
