@@ -10,6 +10,7 @@ class Customer:
         # invoke an API
         # Update a database
         # calculate Costs...........
+        
         print("Calculating Cost")                       # Just to simulate something..
         self.membership_type = new_membership
 
