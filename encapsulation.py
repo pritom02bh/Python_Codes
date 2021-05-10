@@ -8,3 +8,7 @@ class Person:
     def Name(self):
         return self.__name                  # We can use it later to access the attribute.
 
+
+    @Name.setter
+    def Name(self, value):
+        self.__name = value
