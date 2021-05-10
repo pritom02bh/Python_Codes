@@ -9,6 +9,17 @@ class Person:
         return self.__name                  # We can use it later to access the attribute.
 
 
-    @Name.setter
+    @Name.setter                            # setter
     def Name(self, value):
         self.__name = value
+
+    @staticmethod
+
+
+
+
+
+p1 = Person("Pritom", 20, 'M')
+print(p1.Name)
+
+
