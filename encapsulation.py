@@ -12,14 +12,22 @@ class Person:
     def Age(self):
         return self.__age
 
+    @property
+    def Gender(self):
+        return self.__gender
+
 
     @Name.setter                            # setter
     def Name(self, value):
         self.__name = value
 
-    @Age.setter    
+    @Age.setter                             # Setter
     def Age(self, value):
         self.__age = value
+
+    @Gender.setter                          # Setter
+    def Gender(self, value):
+        self.__gender = value
 
     @staticmethod                           # A Static Method
     def mymethod():
@@ -33,5 +41,5 @@ Person.mymethod()
 p1 = Person("Pritom", 20, 'M')
 print(p1.Name)
 print(p1.Age)
-
+print(p1.Gender)
 
