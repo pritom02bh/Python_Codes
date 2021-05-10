@@ -4,7 +4,7 @@ class Person:
         self.__age = age
         self.__gender = gender
 
-    @property
+    @property                               # A property is created to access the private attribute.
     def Name(self):
-        return self.__name
+        return self.__name                  # We can use it later to access the attribute.
 
