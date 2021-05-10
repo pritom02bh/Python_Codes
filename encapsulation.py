@@ -13,10 +13,13 @@ class Person:
     def Name(self, value):
         self.__name = value
 
-    @staticmethod
+    @staticmethod                           # A Static Method
+    def mymethod():
+        print("This is a static method")
+    
 
 
-
+Person.mymethod()
 
 
 p1 = Person("Pritom", 20, 'M')
