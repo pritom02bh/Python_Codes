@@ -7,11 +7,13 @@ to initialize a variable.
 '''
 
 class Employee:
+
+    raise_amount = 1.04                                     # Class variable
     
     raise_amt = 1.04
 
     def __init__(self, first, last, pay):
-        self.first = first                                  # those are the instance variables
+        self.first = first                                  # Instance variables
         self.last = last
         self.email = first + '.' + last + '@email.com'
         self.pay = pay
