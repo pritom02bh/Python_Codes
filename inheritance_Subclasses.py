@@ -12,4 +12,7 @@ class Employee:
 
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
-        
+
+emp1 = Employee('Pritom', 'Bhowmik', 89000)
+print(emp1.fullname())
+print(emp1.email)
