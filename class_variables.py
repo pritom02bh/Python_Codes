@@ -19,5 +19,10 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
+    def apply_raise(self):
+        self.pay = int(self.pay * 1.50)
+
+
+
 emp1 = Employee('Pritom', 'Bhowmik', 89000)
 print(emp1.fullname())
