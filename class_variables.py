@@ -10,7 +10,6 @@ class Employee:
 
     raise_amount = 1.04                                     # Class variable
     
-    raise_amt = 1.04
 
     def __init__(self, first, last, pay):
         self.first = first                                  # Instance variables
@@ -22,7 +21,7 @@ class Employee:
         return '{} {}'.format(self.first, self.last)
 
     def apply_raise(self):
-        self.pay = int(self.pay * 1.04)
+        self.pay = int(self.pay * Employee.raise_amount)
 
 
 
