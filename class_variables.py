@@ -20,9 +20,13 @@ class Employee:
         return '{} {}'.format(self.first, self.last)
 
     def apply_raise(self):
-        self.pay = int(self.pay * 1.50)
+        self.pay = int(self.pay * 1.04)
 
 
 
-emp1 = Employee('Pritom', 'Bhowmik', 89000)
-print(emp1.fullname())
+emp_1 = Employee('Pritom', 'Bhowmik', 80000)
+print(emp_1.fullname())
+
+print(emp_1.pay)
+emp_1.apply_raise()
+print(emp_1.pay)
