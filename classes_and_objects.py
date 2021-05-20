@@ -2,6 +2,10 @@
 
 class Person:
     def __init__(self):
-        print("hello people!")
+       self.name = "Pritom"
+       self.age = "25"
 
-x = Person()
+
+personal = Person()
+print(personal.name)
+print(personal.age)
