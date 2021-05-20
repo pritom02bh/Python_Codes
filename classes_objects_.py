@@ -20,5 +20,3 @@ person_2 = Person("Mike", 28, 171)
 print(person_2.name)
 print(person_2.age)
 print(person_2.height)
-
-del person_2
