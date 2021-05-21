@@ -12,4 +12,8 @@ class Worker(Person):
     def __init__(self, name, age, height, salary):
         super(Worker, self).__init__(name, age, height)
         self.salary = salary
+
+    def cal_yearly_salary(self, salary):
+        return salary * 12
+
         
