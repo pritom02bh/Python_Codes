@@ -8,6 +8,8 @@ class Person:
         return("Name: {}, Age: {}, Height: {}".format(self.name, self.age, self.height))
 
 
-class Worker:
+class Worker(Person):
     def __init__(self, name, age, height, salary):
+        super(Worker, self).__init__(name, age, height)
+        self.salary = salary
         
