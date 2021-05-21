@@ -6,8 +6,9 @@ class Person:
        self.age = age
        self.height = height
 
-    def __del__(self):                          #destructor
-        print(" Object Deleted ")
+    def __str__(self):
+        return("Name: {}, Age: {}, Height: {}".format(self.name, self.age, self.height))
+
  
 
 person_1 = Person("Pritom", 25, 170)
@@ -17,6 +18,4 @@ print(person_1.height)
 
 
 person_2 = Person("Mike", 28, 171)
-print(person_2.name)
-print(person_2.age)
-print(person_2.height)
+print(person_2)
