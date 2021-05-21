@@ -28,6 +28,8 @@ class Employee:
 emp_1 = Employee('Pritom', 'Bhowmik', 80000)
 print(emp_1.fullname())
 
+Raise= Employee.raise_amount
+print("Raise Amount : " + str(Raise))
 print(emp_1.pay)
 emp_1.apply_raise()
 print(emp_1.pay)
