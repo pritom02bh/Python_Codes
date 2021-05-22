@@ -15,6 +15,9 @@ class Worker(Person):
 
     def __str__(self):
         text = super(Worker, self).__str__()
+        text += ", salary {}".format(self.salary)
+        return text
+
 
     def cal_yearly_salary(self):
         return self.salary * 12
