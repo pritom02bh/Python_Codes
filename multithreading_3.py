@@ -8,3 +8,5 @@ semaphore = threading.BoundedSemaphore(value = 5)           # that allows only 5
 
 def access(thread_number):
     print("{} is trying to access!".format(thread_number))
+    semaphore.acquire()
+    print("{")
