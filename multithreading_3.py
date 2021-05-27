@@ -5,3 +5,6 @@ import threading
 import time
 
 semaphore = threading.BoundedSemaphore(value = 5)           # that allows only 5 accesses at a time
+
+def access(thread_number):
+    print("{} is trying to access!".format(thread_number))
