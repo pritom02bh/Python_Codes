@@ -11,7 +11,7 @@ def double():
         x *= 2
         print(x)
         time.sleep(1)
-    print("reached the maximum")
+    print("reached the maximum!")
 
 
 def halve():
