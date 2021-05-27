@@ -19,6 +19,11 @@ def halve():
         x /= 2
         time.sleep(1)
 
+t1 = threading.Thread(target = halve)
+t2 = threading.Thread(target = double)
+
+t1.start()
+t2.start()
 
 
 
