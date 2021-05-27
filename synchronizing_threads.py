@@ -1,5 +1,5 @@
 # Synchronizing_threads
-#
+# Locking
 
 import threading
 import time
