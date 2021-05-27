@@ -1,21 +1,22 @@
 # Synchronizing_threads
+#
 
 import threading
 import time
 
 x = 8192
 
-lock = threading.Lock()
+lock = threading.Lock()             # Locking 
 
 def double():
     global x, lock
-    lock.acquire()
+    lock.acquire()                  # Lock the resources for the thread
     while x < 16384:
         x *= 2
         print(x)
         time.sleep(1)
     print("reached the maximum!")
-    lock.release()
+    lock.release()                  # Releasing The Lock
 
 
 def halve():
