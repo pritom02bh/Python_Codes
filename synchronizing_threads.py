@@ -18,6 +18,7 @@ def halve():
     global x
     while x > 1:
         x /= 2
+        print(x)
         time.sleep(1)
 
 t1 = threading.Thread(target = halve)
