@@ -1,1 +1,1 @@
-# Semaphores -->> to limit the acce
+# Semaphores -->> to limit the access to the resources
