@@ -9,5 +9,7 @@ def function1():
 t1 = threading.Thread(target = function1)
 t1.start()
 
+t1.join()                         # Do
+
 
 print("Hey People")
