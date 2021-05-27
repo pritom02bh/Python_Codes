@@ -4,4 +4,4 @@
 import threading
 import time
 
-semaphore = threading
+semaphore = threading.BoundedSemaphore(value = 5)           # that allows only 5 accesses at a time
