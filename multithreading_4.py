@@ -1,4 +1,4 @@
-# Events and Daemon Threads
+# Events Threads
 
 import threading
 
