@@ -10,7 +10,7 @@ def myfunction():
     print("performing action XYZ now...")
 
 t1 = threading.Thread(target = myfunction)
-t1.start
+t1.start()
 
 x = input("Do you want to trigger the event? (y/n) \n ")
 if x == "y":
