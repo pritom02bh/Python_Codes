@@ -1,5 +1,6 @@
 # Daemon Threads
 
+from os import read
 import threading 
 import time
 
@@ -17,4 +18,10 @@ def printloop():
     for x in range(30):
         print(text)
         time.sleep(1)
+
+t1 = threading.Thread(target=readFile, daemon=True)
+t2 = threading.Thread(target = printloop)
+
+t1.start()
+t2.start()
 
