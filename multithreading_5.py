@@ -15,7 +15,7 @@ def readFile():
         time.sleep(3)
 
 def printloop():
-    for x in range(10):
+    for x in range(30):
         print(text)
         time.sleep(1)
 
