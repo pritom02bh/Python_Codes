@@ -19,7 +19,7 @@ def printloop():
         print(text)
         time.sleep(1)
 
-t1 = threading.Thread(target=readFile, daemon=True)
+t1 = threading.Thread(target=readFile, daemon = True)
 t2 = threading.Thread(target = printloop)
 
 t1.start()
